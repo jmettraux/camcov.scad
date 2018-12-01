@@ -4,11 +4,11 @@
 
 // unit is millimeter
 
-t = 1.5; // thickness
-h = 18.0; // height
-d0 = 6.5; // rear depth
-d1 = 5.0; // front depth
-l = 20.0; // length
+t = 1.0; // thickness
+h = 16.0; // height
+d0 = 5.1; // rear depth
+d1 = 4.2; // front depth
+l = 25.0; // length
 
 difference() {
 
@@ -20,8 +20,11 @@ difference() {
     ]);
   }
 
-  translate([ d0 + t, h / 2, l * 0.94 ])
+  translate([ d0 + t, h / 2, l * 0.86 ])
   rotate([ 90, 90, 90 ])
     linear_extrude(height=2) text("思想罪", font="Hiragino Sans", size=4.2);
+  //translate([ d0 + t, h / 4, l * 0.86 ])
+  //rotate([ 90, 90, 90 ])
+  //  linear_extrude(height=2) text("THOUGHT CRIME", font="Helvetica", size=2.8);
 }
 
